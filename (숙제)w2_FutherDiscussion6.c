@@ -4,11 +4,11 @@ int main(void) {
   char in_str[200]=" ";
   char out_str[200]=" ";
   int i=0;
-  int j=20;
+  int j=200;
   scanf("%c",in_str);
-  for(i=0;i>=20;i++){
+  for(i=0;i>=200;i++){
     out_str[j]=in_str[i];
-    j++;
+    j--;
   }
   printf("%c",out_str);
   return 0;
