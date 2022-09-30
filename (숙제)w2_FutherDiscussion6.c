@@ -1,18 +1,18 @@
+
 #include <stdio.h>
 
 int main(void) {
-  char in_str[200]=" ";
-  char out_str[200]=" ";
+  char in_str[5]=" ";
+  char out_str[5]=" ";
   int i=0;
-  int j=200;
-  scanf("%c",in_str);
-  for(i=0;i>=200;i++){
+  int j=4;
+  scanf("%s",in_str);
+  for(i=0;i<5;i++){
     out_str[j]=in_str[i];
     j--;
   }
-  printf("%c",out_str);
+  printf("%s",out_str);
   return 0;
 }
 
-//왜 안돼지?
-//아.. 못하겠다..
+//단어입력 -> 
