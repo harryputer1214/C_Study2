@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void main() {
+  int ch = 'A';
+
+  char* pch;
+  pch=&ch;
+  
+  printf("%p\n",pch);
+  printf("%c\n",*pch);
+}
