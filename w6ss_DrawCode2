@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+struct COORDI {
+  int x;
+  int y;
+};
+
+struct CIRCLE {
+  struct COORDI cen;
+  double r;
+};
+
+int main() {
+  struct CIRCLE c1;
+  struct CIRCLE c2 = {{4, 5}, 12.4};
+  struct CIRCLE c3;
+
+  //  1)
+  c1.cen.x = 10;
+  c1.cen.y = 20;
+  c1.r = 5.0;
+	printf("x: %d, y: %d, r: %f\n\n", c1.cen.x, c1.cen.y, c1.r);
+
+  //  2)
+  printf("x: %d, y: %d, r: %f\n\n", c2.cen.x, c2.cen.y, c2.r);
+
+  // 3)
+  printf("x: ");
+  scanf("%d", &c3.cen.x);
+  printf("y: ");
+  scanf("%d", &c3.cen.y);
+  printf("r: ");
+  scanf("%lf", &c3.r);
+  printf("x: %d, y: %d, r: %f\n\n", c3.cen.x, c3.cen.y, c3.r);
+
+  return 0;
+}
