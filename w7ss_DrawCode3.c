@@ -17,7 +17,7 @@ int main() {
   fscanf(in, "%lf %lf", &d1, &d2);
 
   printf("\n입력 받은 수들을 모두 출력합니다.\n");
-  printf("%d &d\n", n, m);
+  printf("%d %d\n", n, m);
   printf("%lf %lf\n", d1, d2);
   printf("\n\n>>>>>>>>>>>>>>>>>>>>\n");
   printf("어디서 입력 받았을까요?\n");
